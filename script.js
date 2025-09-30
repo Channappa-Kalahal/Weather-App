@@ -1,6 +1,6 @@
 console.log("Welocome to weather app");
 
-const apikey = "ac1f1a8b8a0edb549e5342abe956ae2e";
+const apikey = "YOUR_API_KEY_HERE";
 const apiurl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
 const searchbtn = document.querySelector(".search button");
@@ -51,4 +51,5 @@ async function checkweather(city) {
 searchbtn.addEventListener("click", () => {
     checkweather(searchbox.value);
 })
+
 
